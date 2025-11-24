@@ -19,14 +19,45 @@ description: >- # this means to ignore newlines until "baseurl:"
   This website is for testing purposes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+author:
+  name: ""
+  bio: ""
+  avatar: ""
 twitter_username: ptest
 github_username:  ptest
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
 plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jekyll-include-cache
+
+# Minimal Mistakes specific settings
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+search: true
+
+# Reading Files
+include:
+  - _pages
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
