@@ -36,6 +36,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+encoding: utf-8
 
 # Minimal Mistakes specific settings
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
