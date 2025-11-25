@@ -17,6 +17,9 @@ source "https://rubygems.org"
 gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 
+# Replace old sass with sassc (better encoding support)
+gem "jekyll-sass-converter", "~> 2.0"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"

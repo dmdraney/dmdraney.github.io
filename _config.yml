@@ -38,6 +38,11 @@ plugins:
   - jekyll-include-cache
 encoding: utf-8
 
+# sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Minimal Mistakes specific settings
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
